@@ -25,6 +25,13 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    packagingOptions {
+        exclude '**/bundle.properties'
+        exclude '**/messages*.properties'
+        exclude '**/logcat.properties'
+        exclude '**/jsr47min.properties'
+    }
 }
 
 repositories {
